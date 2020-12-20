@@ -13,7 +13,7 @@ export class ServerMod {
         if (this._req.method === "GET" && this._req.url === url) {
             console.log("method: " + this._req.method)
             // @ts-ignore
-            f(this._req)
+            f(req!)
         }
     }
 
@@ -21,7 +21,7 @@ export class ServerMod {
         if (this._req.method === "POST" && this._req.url === url) {
             console.log("method: " + this._req.method)
             // @ts-ignore
-            f(this._req)
+            f(req!)
         }
     }
 
@@ -29,7 +29,7 @@ export class ServerMod {
         if (this._req.method === "PUT" && this._req.url === url) {
             console.log("method: " + this._req.method)
             // @ts-ignore
-            f(this._req)
+            f(req!)
         }
     }
 
@@ -37,7 +37,7 @@ export class ServerMod {
         if (this._req.method === "DELETE" && this._req.url === url) {
             console.log("method: " + this._req.method)
             // @ts-ignore
-            f(this._req)
+            f(req!)
         }
     }
 }
